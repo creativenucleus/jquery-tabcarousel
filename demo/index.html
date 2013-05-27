@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>jQuery-Tabcarousel Demo</title>
+		<link rel="stylesheet" type="text/css" href="default.css">
+	</head>
+	<body>
+		<h1>jQuery-Tabcarousel Demo</h1>
+		
+		<div id="tabcarousel-example">
+			<ul class="jqtc-tabs">
+				<li href="#tabs-1">First</li>
+				<li href="#tabs-2">Second</li>
+				<li href="#tabs-3">Third</li>
+			</ul>
+			<div id="tabs-1" class="jqtc-content">
+				Content 1
+			</div>
+			<div id="tabs-2" class="jqtc-content">
+				Content 2
+			</div>
+			<div id="tabs-3" class="jqtc-content">
+				Content 3
+			</div>
+		</div>
+			
+		<!-- Scripts -->
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
+		<script type="text/javascript" src="../lib/jquery-tabcarousel.js"></script>
+		<script>
+			$( document ).ready( function() {
+				
+				$( '#tabcarousel-example' ).tabcarousel({
+					tab_left: 'prev',
+					tab_right: 'next'
+				});
+			});
+		</script>
+	</body>
+</html>
